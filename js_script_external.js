@@ -1,0 +1,1 @@
+document.querySelector("#largelogo").onmouseover = none;

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css_stylesheet_external.css">
+	<link href="https://fonts.googleapis.com/css?family=Rasa|Yellowtail" rel="stylesheet">
+
+	<title>Food</title>
+
+</head>
+
+<header> 
+<!--dropdown originates from around logo in top left corner of header. Design choice due to client's insistance of clean design and no dropdown menu indicator-->
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"><img id="logoheader" src="Beau_logonw.png" width=15%"></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="pg1_mursilane.html">Home</a>
+    <a href="pg2_beauisms.html">Beauisms</a>
+    <a href="pg3_style.html">Style</a>
+    <a href="pg7_styleslideshow.html">Spring Collection 2017</a>
+    <a href="pg4_travel.html">Travel</a>
+    <a href="#">Food</a>
+    <a href="#">Music</a>
+  </div>
+</div>
+	
+</header>
+
+	<style type="text/css">
+		
+		.dropbtn {
+	    background-color: white;
+	    font-size: 16px;
+	    border: none;
+	    cursor: pointer;
+}
+	#logoheader {
+		margin-right: 70%;
+	}
+
+	.dropbtn:hover, .dropbtn:focus {
+    	background-color: white;
+}
+
+	.dropdown {
+	    display: block;
+	    width: 40%;
+	    margin-right: 100%;
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #f9f9f9;
+	    min-width: 160px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+	.dropdown-content a {
+	    color: black;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+}
+
+	.dropdown-content a:hover {background-color: #f1f1f1}
+
+	.show {
+		display:block;
+}
+	header {
+		/*background color for header made .4% transparent to see the background image top*/background-color: rgba(255,255,255,.4);
+		width: 100%;
+		height: 10%;
+		margin: 0;
+		position: fixed;
+		font-family: 'Rasa', serif;
+
+	}
+	html {
+		height: 100%;
+		margin: 0;
+	}
+	body {
+		height: 100%;
+		width: 100%;
+		margin: 0%;
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding-bottom: 15%;
+		background-image: url("Live-Hart.jpg");
+	}
+
+	#mess1{
+		width: 100%;
+		font-family: 'Rasa', serif;
+		color: #D6392B;
+		position: absolute;
+		font-size: 150px;
+		margin-top: 30%;
+		margin-left: 7.5%;
+	}
+
+	</style>
+
+	<body>
+
+		<div>
+		<h1 id="mess1"> COMING<span style="color: #EC6968; font-family: 'Yellowtail', cursive;">SOON</span></h1>
+		</div>
+
+
+	<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+	
